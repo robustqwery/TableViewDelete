@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TableViewDelete.MainPage">
+
+    <Grid Margin="12,0,12,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="5*" />
+        </Grid.RowDefinitions>
+        <Label Text="Персональные данные" Margin="12, 0 ,12, 0" TextColor="Blue"  Grid.Column="0" Grid.Row="0" Grid.ColumnSpan ="2" FontSize="Medium" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" />
+        <Label Text="Имя " Grid.Column="0" Grid.Row="1" FontSize="Medium" HorizontalOptions="EndAndExpand" VerticalOptions="Center" />
+        <Entry x:Name="loginCell"  Placeholder="Введите Имя" WidthRequest="350" Grid.Column="1" Grid.Row="1" FontSize="Medium" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Keyboard="Default"/>
+        <Label Text="Фамилия" Grid.Column="0" Grid.Row="2" FontSize="Medium" HorizontalOptions="End" VerticalOptions="Center"/>
+        <Entry x:Name="passCell"  Placeholder="Введите фамилию" WidthRequest="350" Grid.Column="1" Grid.Row="2" FontSize="Medium" HorizontalOptions="Start" VerticalOptions="Center" IsPassword="False" Keyboard="Default"/>
+        <Label Text="Email и зарплата" Margin="12, 0 ,12, 0" TextColor="Blue" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan ="2" FontSize="Medium" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" />
+        <Label Text="Email" Grid.Column="0" Grid.Row="4" FontSize="Medium" HorizontalOptions="End" VerticalOptions="Center" />
+        <Entry x:Name="telCell"  Placeholder="Введите email" WidthRequest="350" Grid.Column="1" Grid.Row="4" FontSize="Medium" HorizontalOptions="Start" VerticalOptions="Center" Keyboard="Numeric"/>
+        <Label Text="Зарплата" Grid.Column="0" Grid.Row="5" FontSize="Medium" HorizontalOptions="End" VerticalOptions="Center" />
+        <Entry x:Name="emailCell"  Placeholder="Введите зарплату" WidthRequest="350" Grid.Column="1" Grid.Row="5" FontSize="Medium" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Keyboard="Email"/>
+        <Button x:Name="saveButton" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2" Text="Добавить" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="Center" Clicked="saveButton_Clicked"/>
+        <Button x:Name="toCommonPageBtn" Grid.Column="1" Grid.Row="7" Text="Просмотр и удаление сотрудников" FontSize="Medium" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Clicked="toCommonPageBtn_Clicked"/>
+    </Grid>
+    
+    
+
+    
+
+</ContentPage>
